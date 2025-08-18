@@ -4,8 +4,6 @@ This project was built as part of my **data engineering learning journey**, foll
 
 My goal was to **practice modern data warehousing concepts** using the Medallion Architecture (Bronze–Silver–Gold), **design ETL pipelines**, and **prepare analytical models** in SQL Server.  
 
-I followed the course material as a foundation, then expanded and documented the project in my own structure to strengthen my portfolio.  
-
 ---
 
 ## 🏗️ Data Architecture
@@ -23,7 +21,7 @@ The project uses the **Medallion Architecture** pattern with three layers:
 
 Through this project I practiced:  
 
-- **Data Ingestion**: Loading raw CSV datasets into SQL Server (BULK INSERT / OPENROWSET).  
+- **Data Ingestion**: Loading raw CSV datasets into SQL Server (BULK INSERT).  
 - **ETL Design**: Building transformations across Bronze → Silver → Gold layers.  
 - **Data Modeling**: Designing a **star schema** (fact + dimension tables).  
 - **SQL Development**: Writing analytical queries, window functions, and transformations.  
@@ -46,31 +44,6 @@ Develop a small-scale **modern data warehouse** in SQL Server to consolidate ERP
 
 ---
 
-## 📂 Repository Structure
-```
-data-warehouse-project/
-│
-├── datasets/                           # Raw ERP and CRM data
-│
-├── docs/                               # Documentation & diagrams
-│   ├── etl.drawio                      # ETL pipeline diagram
-│   ├── data_architecture.drawio        # Architecture diagram
-│   ├── data_catalog.md                 # Dataset field descriptions
-│   ├── data_flow.drawio                # Data flow diagram
-│   ├── data_models.drawio              # Star schema model
-│   ├── naming-conventions.md           # Naming guidelines
-│
-├── scripts/                            # SQL ETL scripts
-│   ├── bronze/                         # Raw ingestion
-│   ├── silver/                         # Cleansing & standardization
-│   ├── gold/                           # Business-ready star schema
-│
-├── tests/                              # Data quality checks
-│
-├── README.md                           # Project overview
-├── LICENSE                             # License
-└── requirements.txt                    # Dependencies
-```
 
 ---
 
